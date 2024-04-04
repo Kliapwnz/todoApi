@@ -102,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test:integration" />
         <item itemvalue="npm.storybook" />
+        <item itemvalue="npm.test:integration" />
         <item itemvalue="Jest.addItemForm" />
       </list>
     </recent_temporary>
