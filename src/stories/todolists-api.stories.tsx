@@ -19,9 +19,7 @@ export const GetTodolists = () => {
       axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
          .then((res) => {
             setState(res.data)
-
          })
-
    }, [])
    return <div>{JSON.stringify(state)}</div>
 }
@@ -29,7 +27,10 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
    const [state, setState] = useState<any>(null)
    useEffect(() => {
-      axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title: "KLIApwnz"}, settings)
+      axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists",
+         {title: "1"},
+         settings
+      )
          .then((res) => {
             setState(res.data)
          })
@@ -42,7 +43,7 @@ export const CreateTodolist = () => {
 export const DeleteTodolist = () => {
    const [state, setState] = useState<any>(null)
    useEffect(() => {
-      axios.delete("https://social-network.samuraijs.com/api/1.1/todo-lists/d8e39e1b-57a6-4936-afb8-e402e2486220", settings)
+      axios.delete("https://social-network.samuraijs.com/api/1.1/todo-lists/78ea2873-ca9b-45ad-a95c-a37f2c269c19", settings)
          .then((res) => {
             setState(res.data)
          })
