@@ -42,7 +42,7 @@ export const CreateTodolist = () => {
 export const DeleteTodolist = () => {
    const [state, setState] = useState<any>(null)
    useEffect(() => {
-      axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists/c80e7753-ad13-474e-bc3a-ab6dcd76aaa7", settings)
+      axios.delete("https://social-network.samuraijs.com/api/1.1/todo-lists/d8e39e1b-57a6-4936-afb8-e402e2486220", settings)
          .then((res) => {
             setState(res.data)
          })
